@@ -6,13 +6,13 @@
 <body>
 <h1>
         <div class="container">
-        <h1>Welcome to login page</h1>
+        <h1>Enter TODO details</h1>
 
         <pre>${errorMessage}</pre>
         <form method="POST">
-        Username:<input type="text" name="name">
-        Password:<input type="password" name="password">
-        <input type="submit">
+        Description:<input type="text" name="description">
+        Target Date:<input type="date" name="date">
+        <input type="submit" class="btn btn-success">
         </form>
 
 </div>
