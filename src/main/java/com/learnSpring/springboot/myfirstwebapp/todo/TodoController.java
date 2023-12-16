@@ -31,8 +31,8 @@ public class TodoController {
     }
     @RequestMapping(value="add-todo",method = RequestMethod.POST)
     public String addNewTodo(@RequestParam String description, @RequestParam LocalDate date, ModelMap modal){
-//        modal.addAttribute("todos",todos);
-        new Todo(1,"Rohit",description,date,true);
+        String username =(String) modal.get("name");
+        todoService.addTodo(username,description,date,false);
         return "redirect:list-todos";
     }
 }

@@ -10,8 +10,8 @@
 
         <pre>${errorMessage}</pre>
         <form method="POST">
-        Description:<input type="text" name="description">
-        Target Date:<input type="date" name="date">
+        Description:<input type="text" name="description" required>
+        Target Date:<input type="date" name="date" required>
         <input type="submit" class="btn btn-success">
         </form>
 
